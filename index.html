@@ -6,15 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+				 aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
@@ -41,14 +43,15 @@
 		<div class="container">
 			<div class="col">
 				<h1 class="site-name">SmirnenskiWeather</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda perspiciatis nihil alias magni excepturi provident quibusdam animi et magnam deleniti ratione, cupiditate totam placeat, aut iste perferendis sunt consequatur.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda perspiciatis nihil alias magni excepturi
+					provident quibusdam animi et magnam deleniti ratione, cupiditate totam placeat, aut iste perferendis sunt consequatur.</p>
 			</div>
 			<div class="col-md-5 search mx-auto">
 				<form>
 					<div class="input-group input-group-lg">
-						<input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+						<input id="searchInput" type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
 						<span class="input-group-btn">
-							<button class="btn btn-secondary" type="button">Go!</button>
+							<a id="searchButton" class="btn btn-secondary" href="#">Go!</a>
 						</span>
 					</div>
 				</form>
@@ -58,47 +61,20 @@
 
 	<div class="row bg-light top-bottom">
 		<div class="container">
-			<div class="col-sm-6">
-				<div class="card card-custom">
-					<div class="left">
-						<div class="card-body">
-							<h2 class="title"></h2>
-							<h3 class="curr">Current: </h3>
-							<h4 class="temp"></h4>
-
-							<h5 class="text-muted w-text"></h5>
-							<div class="info">
-
-								<p class="wind">Wind: </p>
-								<p class="card-text"></p>
-								<p class="card-link">
-									<a class="additional-info" href="#">Additional info</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="right">
-						<img class="card-img-top card-image" src="img/w/Sun.svg">
-						<i class="fa fa-star wind-icon" aria-hidden="true"></i>
-						<i class="fa fa-long-arrow-up wind-body" aria-hidden="true"></i>
-					</div>
-				</div>
+			<div id="cards-container">
 			</div>
 		</div>
-
 	</div>
 	<footer class="text-muted top-bottom">
 		<div class="container">
 			<p>SmirnenskiWeather &copy; 2017</p>
-			<p>
-				<div>Icons made by <a href="https://www.flaticon.com/authors/yannick" title="Yannick">Yannick</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-					    target="_blank">CC 3.0 BY</a></div>
-			</p>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+	 crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 	<script src="https://use.fontawesome.com/eca7209da9.js"></script>
 </body>

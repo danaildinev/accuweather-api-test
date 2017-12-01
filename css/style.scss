@@ -2,6 +2,7 @@
     font-size: 6rem;
     font-weight: 300;
     line-height: 1.2;
+    word-break: break-word;
 }
 
 .top-bottom {
@@ -13,28 +14,29 @@
 }
 
 .card-custom {
-    flex-direction: row;
-
+    .content {
+        display: flex;
+        flex-direction: columns;
+    }
     .top {
         display: flex;
         align-items: center;
-
         h4 {
             margin: 0;
             font-size: 2rem;
             font-weight: 300;
         }
     }
-
     .right {
         flex: 1;
         position: relative;
     }
 
     .card-image {
-        height: 150px;
         position: absolute;
-        top: -20px;
+        width: 59px;
+        right: 0;
+        top: 12px;
     }
 
     .wind-icon {
@@ -42,24 +44,38 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         position: absolute;
-        bottom: 47px;
-        font-size: 150px;
+        bottom: 32px;
+        font-size: 100px;
         left: 50%;
-        margin-left: -72px;
+        margin-left: -48px;
         z-index: 2;
         color: #aaa;
     }
 
     .wind-body {
         color: #777;
-        font-size: 150px;
+        font-size: 100px;
         position: absolute;
         bottom: 0;
         left: 50%;
-        margin-left: -32px;
+        margin-left: -20px;
     }
 }
-@-webkit-keyframes rotation {
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cards-container > div[class*="col-"] {
+    display: flex;
+    margin-bottom: 20px;
+    flex: 0 0 47.666667%;
+    max-width: 52.666667%;
+}
+
+@keyframes rotation {
     from {
         -webkit-transform: rotate(0deg);
     }
