@@ -13,16 +13,58 @@
 }
 
 .card-custom {
+    flex-direction: row;
+
     .top {
         display: flex;
         align-items: center;
+
         h4 {
             margin: 0;
             font-size: 2rem;
             font-weight: 300;
         }
     }
+
+    .right {
+        flex: 1;
+        position: relative;
+    }
+
     .card-image {
-        height: 100px;
+        height: 150px;
+        position: absolute;
+        top: -20px;
+    }
+
+    .wind-icon {
+        animation-name: rotation;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        position: absolute;
+        bottom: 47px;
+        font-size: 150px;
+        left: 50%;
+        margin-left: -72px;
+        z-index: 2;
+        color: #aaa;
+    }
+
+    .wind-body {
+        color: #777;
+        font-size: 150px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -32px;
+    }
+}
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
     }
 }
