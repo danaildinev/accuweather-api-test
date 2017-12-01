@@ -5,18 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
+	<title>SmirnenskiWeather</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-				 aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
@@ -43,24 +41,33 @@
 		<div class="container">
 			<div class="col">
 				<h1 class="site-name">SmirnenskiWeather</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda perspiciatis nihil alias magni excepturi
-					provident quibusdam animi et magnam deleniti ratione, cupiditate totam placeat, aut iste perferendis sunt consequatur.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda perspiciatis nihil alias magni excepturi provident quibusdam animi et magnam deleniti ratione, cupiditate totam placeat, aut iste perferendis sunt consequatur.</p>
 			</div>
-			<div class="col-md-5 search mx-auto">
-				<form>
+			<div class="row">
+				<div class="col-lg-6 search mx-auto">
 					<div class="input-group input-group-lg">
 						<input id="searchInput" type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
 						<span class="input-group-btn">
-							<a id="searchButton" class="btn btn-secondary" href="#">Go!</a>
-						</span>
+					        <button id="searchButton" class="btn btn-secondary" href="#">Go!</button>
+					    </span>
+						<span class="input-group-addon">
+  				        	<input id="extraInfo" type="checkbox" aria-label="Checkbox for following text input" checked>&nbsp;<span class="text-muted text-small">Extra info</span>
+  				     	</span>
 					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
-
 	<div class="row bg-light top-bottom">
 		<div class="container">
+			<div id="sorting" class="btn-group" data-toggle="buttons">
+				<label class="btn btn-secondary active" id="gridRadio">
+					<input type="radio" name="options"  autocomplete="off" checked> Grid
+				</label>
+				<label class="btn btn-secondary" id="listRadio" >
+					<input type="radio" name="options" autocomplete="off"> List
+				</label>
+			</div>
 			<div id="cards-container">
 			</div>
 		</div>
@@ -71,10 +78,8 @@
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-	 crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 	<script src="https://use.fontawesome.com/eca7209da9.js"></script>
 </body>

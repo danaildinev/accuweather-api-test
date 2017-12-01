@@ -10,13 +10,13 @@
 }
 
 .search {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .card-custom {
+    transition: .3s ease-in-out all;
     .content {
         display: flex;
-        flex-direction: columns;
     }
     .top {
         display: flex;
@@ -60,6 +60,13 @@
         left: 50%;
         margin-left: -20px;
     }
+    .card-footer {
+        .table td, .table th {
+            border: 0;
+            vertical-align: middle;
+            padding: 0;
+        }
+    }
 }
 
 #cards-container {
@@ -73,6 +80,22 @@
     margin-bottom: 20px;
     flex: 0 0 47.666667%;
     max-width: 52.666667%;
+}
+
+.list-view{
+    display: flex !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    flex-direction: row;
+    justify-content: space-between;
+    .card-footer {
+        flex: 0 0 36%;
+        border-left: 1px solid #eee;
+        border-top: 0;
+    }
+    .content {
+        flex: 0 0 55%;
+    }
 }
 
 @keyframes rotation {
